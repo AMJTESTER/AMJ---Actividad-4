@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" type="text/css" content="Ferretería Martín">
+        <link rel="stylesheet" href="styles.css" />
+        <link href="logoFerreteria.png" rel="icon" type="image/x-icon" />
+        <title>Ferretería </title>
+    </head>
+    <body>
+        <section class="container content-section">
+        <!-- En esta sección se muestrar los artículos que podemos añadir al carro -->
+            <h2 class="section-header">PRODUCTOS</h2>
+            <div class="shop-items">                
+                <div class="shop-item">
+                    <span class="shop-item-title">Alicate</span>
+                    <!-- Se debe añadir la ruta de la imagen en git  src="./Images/alicate.jpg"-->
+                    <img class="shop-item-image" src="alicate.jpg"> 
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">€30.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <span class="shop-item-title">Destornillador</span>
+                    <!--Se debe añadir la ruta de la imagen en git ./Images/destornillador.jpg" -->
+                    <img class="shop-item-image" src="destornillador.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">€12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">COMPRAR</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Aquí termina la sección donde se listan los artículos que podemos añadir al carro -->
+        <section class="container content-section">
+        <!-- Inicio del carrito -->               
+        <h2 class="section-header">CARRITO</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ARTÍCULO</span>
+                <span class="cart-price cart-header cart-column">PRECIO</span>
+                <span class="cart-quantity cart-header cart-column">CANTIDAD</span>
+            </div>
+            <div class="cart-items">
+                <!-- Aquí comienza el desglose (precio, detalle y cantidad) de los articulos en el carrito-->
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="alicate.jpg" width="100" height="100">
+                        <span class="cart-item-title">Alicate</span>
+                    </div>
+                    <span class="cart-price cart-column">€30.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" min="1" type="number" value="1">
+                        <button class="btn btn-danger" type="button">ELIMINAR</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="destornillador.jpg" width="100" height="100">
+                        <span class="cart-item-title">Destornillador</span>
+                    </div>
+                    <span class="cart-price cart-column">€12.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" min="1" type="number" value="1">
+                        <button class="btn btn-danger" type="button">ELIMINAR</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Aquí termina el desglose del carrito -->
+            <!-- Inicio del total -->
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">€125,30</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">COMPRAR</button>
+            <!-- Fin del total -->
+        </section>
+        <!-- Fin del carrito -->
+        <footer>
+            <address>
+                Email de contacto: <a href="mailto:contacto@example.com">Ferretería Martín S.L.</a>
+                Teléfono: 916 666 666
+                Nos puedes encontrar en Calle de Tuercas, 101, 28040 Madrid
+            </address>
+            <p>
+                © 2023 Madrid Copyright
+                <!--<img src="logoEventos.jpg" width="50" height="50" alt="logo empresa de eventos"> -->
+            </p>
+          </footer>  
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>
